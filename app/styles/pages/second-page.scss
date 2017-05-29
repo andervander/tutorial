@@ -1,0 +1,35 @@
+#second-page {
+  padding: 0 42px;
+  color: #fff;
+
+  .img-wrap {
+    position: relative;
+    font-size: 0;
+
+    img {
+      box-shadow: 0 10px 12px 0 rgba(#000, .26);
+      border-radius: 0 0 5px 5px;
+      max-width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .shadow {
+      position: absolute;
+      box-shadow: 0 10px 12px 0 rgba(#000, .26);
+      background-color: #fff;
+      border-radius: 0 0 5px 5px;
+      height: 100%;
+      top: 0;
+      z-index: 1;
+
+      @for $i from 1 through 6 {
+        &:nth-of-type(#{$i}) {
+          left: #{14 * $i}px;
+          right: #{14 * $i}px;
+          opacity: #{0.7 - $i/10};
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+#first-page {
+  padding: 30px 40px 0 0;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+
+  .gemini-logo {
+    position: relative;
+    flex-basis: 60%;
+    max-width: 60%;
+    height: 100%;
+
+    & > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-height: 100%;
+    }
+  }
+
+
+  .info {
+    flex-basis: 40%;
+    max-width: 40%;
+
+    .logo {
+      height: 75px;
+      margin-bottom: 15px;
+    }
+  }
+}
