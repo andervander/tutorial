@@ -1,4 +1,4 @@
-# Titurial
+# Tutorial
 
 #### Basic CLI Commands
 
@@ -8,5 +8,7 @@
 - Start project in development mode:
 `$ npm start` or `$ yarn start`
 
+- To build project:
+`$ npm build` or `$ yarn build`
 
 > Dev-server URL is http://localhost:3000
