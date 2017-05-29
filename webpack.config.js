@@ -37,7 +37,7 @@ module.exports = {
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: isProd ? './' : 'http://localhost:3000/'
+        publicPath: isProd ? '/' : 'http://localhost:3000/'
     },
 
     devtool: isProd ? 'cheap-source-map' : 'source-map',
@@ -82,7 +82,7 @@ module.exports = {
             {
                 test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
                 use: [{
-                    loader: 'file-loader?name=[name].[ext]&useRelativePath=true'
+                    loader: 'file-loader?name=[name].[ext]&outputPath=assets/'
                 }]
             },
 
